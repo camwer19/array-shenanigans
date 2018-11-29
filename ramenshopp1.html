@@ -1,0 +1,34 @@
+<html>
+  
+  <style>
+    .box {
+      text-align:center;
+      margin: 10%;
+    }
+  </style>
+  
+  <body>
+    
+    <div class="box">
+      <h1>Name of Ramen</h1>
+      <input type="text" id="userName">
+      <button onclick="add()">Add</button>
+    </div>
+    
+    <script>
+//ask boss for name of ramen
+//go to another page
+//ask boss for price
+//go to another page
+//on the third pageadd all of the these things to the object called myramenshop and display to screen.
+      
+      function add() {
+        var n = document.getElementById("userName").value;
+        localStorage.setItem("name", n);
+        location.href="ramenshopp2.html";
+      }
+      
+      
+    </script>
+  </body>
+</html>

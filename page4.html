@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Result</h1>
+    
+    <br>
+    <h1 id="results"></h1>
+    
+    <script>
+      var p1 = localStorage.getItem('personsname');
+      var a = localStorage.getItem('adverb');
+      var p2 = localStorage.getItem('place');
+      document.getElementById('results').innerHTML = p1 + " " + a + " walked to the " + p2;
+    </script>
+  </body>
+</html>

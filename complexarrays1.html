@@ -1,0 +1,44 @@
+<html>
+  <body>
+    
+    <h1 id="putName"></h1>
+    <h1 id="putPrice"></h1>
+    <h1 id="putToppings"></h1>
+    <h1>Name</h1>
+    <input type="text" id="userInputN">
+    <h1>Price</h1>
+    <input type="number" id="userInputP">
+    <h1>Topping</h1>
+    <input type="text" id="userInputT">
+    <br> <br>
+    <button onclick="addObject()">Add new Object</button>
+    
+    <script>
+      var burger = {
+       "name": "yes burger",
+       "price": 7.95,
+       "meat": "beef",
+       "toppings": ["Cheese", "Bacon", "Avocado", "Onions", "Ketchup", "Mustard"]
+      }
+
+      var pizza = {
+       "name": "Oh, Pizza",
+       "price": 13.21,
+       "crust": ["Thin", "Original", "Thick", "Deep Dish"],
+       "toppings": ["Pepperoni", "Onions", "Sausage", "Bacon", "Cheese", "Olive", "Bell Pepper"]
+      }
+      
+      function addObject() {
+        var salad = {};
+        salad["name"] = document.getElementById("userInputN").value;
+        salad["topping"] = document.getElementById("userInputT").value;
+        salad["price"] = document.getElementById("userInputP").value;
+        window.alert(salad.name + " with " + salad.topping + " for $" + salad.price);
+      }
+      
+      //step one user input
+      //
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Place</h1>
+    <input type="text" id="place">
+    <button onclick="storageText()">Click Me</button>
+    
+    <script>
+      function storageText() {
+        var x = document.getElementById('place').value;
+        localStorage.setItem("place",x);
+        location.href="page4.html";
+      }
+    </script>
+  </body>
+</html>

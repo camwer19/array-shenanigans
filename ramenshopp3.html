@@ -1,0 +1,26 @@
+<html>
+  
+  <style>
+    .box {
+      text-align: center;
+      margin: 10%;
+    }
+  </style>
+  
+  <body>
+    <div class="box">
+      <h1 id="display"></h1>
+    </div>
+    
+    
+    
+    <script>
+    var myramenshop = {};
+    
+    myramenshop["title"] = localStorage.getItem('name');
+    myramenshop["cost"] = localStorage.getItem('price');
+    document.getElementById("display").innerHTML = myramenshop.title + " for $" + myramenshop.cost;
+      
+    </script>
+  </body>
+</html>

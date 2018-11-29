@@ -1,0 +1,28 @@
+<html>
+  
+  <style>
+    .box {
+      text-align:center;
+      margin: 10%;
+    }
+  </style>
+  
+  <body>
+    
+    <div class="box">
+      <h1>Price of Ramen</h1>
+      <input type="number" id="userPrice">
+      <button onclick="add()">Add</button>
+    </div>
+    
+    <script>
+      
+      function add() {
+        var p = document.getElementById("userPrice").value;
+        localStorage.setItem("price", p);
+        location.href="ramenshopp3.html";
+      }
+      
+    </script>
+  </body>
+</html>
